@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>EIB Group Fan Base | Welcome</title>
+</head>
+<body>
+    <header>
+        <img src="/images/Logo.png" class="logo" width="110px" height="110px">
+        <ul class="nav">
+            <li><a href="Index.html" class="current">Home</a></li>
+            <li><a href="Subsidiaries.html">Subsidiaries</a></li>
+            <li><a href="watch.html">Watch</a></li>
+            <li><a href="Trend.html">Trend</a></li>
+            <li><a href="Reference.html">Reference</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div class="banner">
+        <a href="#" class="play" onClick="toggleVideo();"><i class="fa fa-play-circle-o" aria-hidden="true"></i>Watch Trailer</a>
+        <ul class="sci">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <div class="trailer">
+        <video src="/assets/star.mp4" muted controls="true" autoplay="true"></video>
+        <img class="close" src="/images/close.png" alt="" onClick="toggleVideo();">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel();
+        });
+    </script>
+</body>
+</html>
